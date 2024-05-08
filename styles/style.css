@@ -57,7 +57,19 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+@media only screen and (min-width:768px) and (max-width:991px){
+    section{
+        width: 100dvw;
+        overflow-x: hidden;
+    }
+}
+
 @media only screen and (max-width:576px){
+    section{
+        width: 100dvw;
+        overflow-x: hidden;        
+    }
+
     .section-subtitle{
         font-size: 50px;
     }
@@ -77,7 +89,7 @@ hr {
     /* background-color: #333; */
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100dvw;
     z-index: 9999;
 }
   
@@ -195,12 +207,13 @@ hr {
 
 /*Tablets*/
 @media only screen and (min-width:768px) and (max-width:991px){
-    .section{
-        grid-template-columns: auto 1fr auto;
+    section{
+        grid-template-columns: 0px 1fr 0px;
     }
 
     #hero > .container{
         height: 120dvh;
+        width: 100dvw;
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 0.4fr 0.3fr 0.6fr;
         grid-template-areas: 
@@ -249,8 +262,8 @@ hr {
 
 /*Smartphones and small devices*/
 @media only screen and (max-width:767px){
-    .section{
-        grid-template-columns: auto 1fr auto;
+    section{
+        grid-template-columns: 1fr;
     }
 
     #hero > .container{
@@ -341,7 +354,7 @@ hr {
 
 /*Tablets*/
 @media only screen and (min-width: 768px) and (max-width: 991px){
-    .section{
+    section{
         grid-template-columns: auto 1fr auto;
     }
 
@@ -372,19 +385,24 @@ hr {
         object-fit: scale-down;
     }
 
+    .bio-text p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     #bio .section-title{
         font-size: 20px;
     }
 
     #bio .section-header2{
         font-size: 35px;
+        padding-left: 20px;
     }
-
 }
 
 /*Smartphones and small devices*/
 @media only screen and (max-width:767px){
-    .section{
+    section{
         grid-template-columns: auto 1fr auto;
     }
 
@@ -416,12 +434,19 @@ hr {
         object-fit: scale-down;
     }
 
+    .bio-text p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     #bio .section-title{
         font-size: 16px;
     }
 
     #bio .section-header2{
         font-size: 28px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
 }
@@ -494,7 +519,7 @@ hr {
 
 /*Tablets*/
 @media only screen and (min-width: 768px) and (max-width: 991px){
-    .section{
+    section{
         grid-template-columns: auto 1fr auto;
     }
 
@@ -538,7 +563,7 @@ hr {
 
 /*Smartphones and small devices*/
 @media only screen and (max-width:767px){
-    .section{
+    section{
         grid-template-columns: auto 1fr auto;
     }
 
@@ -556,7 +581,7 @@ hr {
     }
 
     .skills-item{
-        width: 100dvw;
+        width: 95dvw;
     }
 
     #skills .top-right, .skills-images{
@@ -825,7 +850,7 @@ hr {
     }
 
     /*#region mobile First Project*/
-    .section{
+    section{
         grid-template-columns: auto 1fr auto;
     }
 
@@ -992,7 +1017,7 @@ hr {
     }
 
     /*#region mobile First Project*/
-    .section{
+    section{
         grid-template-columns: auto 1fr auto;
     }
 
@@ -1001,7 +1026,7 @@ hr {
     }
 
     #projects > .container1{
-        height: 190dvh;
+        height: 230dvh;
         grid-template-columns: 1fr;
         grid-template-rows: 100px 150px 150px 350px 350px 200px 200px;
         grid-template-areas: 
@@ -1045,6 +1070,12 @@ hr {
         justify-content: center;
     }
 
+    #projects .container1 .g p{
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
     #projects .container1 img{
         width: 100dvw;
         object-fit: scale-down;
@@ -1071,10 +1102,10 @@ hr {
 
     /*#region mobile Second Project*/
     #projects > .container2{
-        height: 50dvh;
+        height: 75dvh;
         width: 100dvw;
         grid-template-columns: 1fr;
-        grid-template-rows: 150px 150px 200px;
+        grid-template-rows: 150px 180px 200px;
         grid-template-areas: 
         "a"
         "c"
@@ -1201,7 +1232,7 @@ hr {
 
 /*Tablets*/
 @media only screen and (min-width: 768px) and (max-width: 991px){
-    .section{
+    section{
         grid-template-columns: auto 1fr auto;
     }
     
@@ -1258,7 +1289,7 @@ hr {
 
 /*Smartphones or smaller devices*/
 @media only screen and (max-width:767px){
-    .section{
+    section{
         grid-template-columns: auto 1fr auto;
     }
     
@@ -1356,7 +1387,7 @@ hr {
 
 /*Tablets*/
 @media only screen and (min-width: 768px) and (max-width: 991px){
-    .section{
+    section{
         grid-template-columns: auto 1fr auto;
     }
 
@@ -1422,7 +1453,7 @@ hr {
 
 /*Smartphones or smaller devices*/
 @media only screen and (max-width: 767px){
-    .section{
+    section{
         grid-template-columns: auto 1fr auto;
     }
 
